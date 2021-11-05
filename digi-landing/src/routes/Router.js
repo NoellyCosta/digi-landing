@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import HomePage from "../pages/HomePage/HomePage"
+import HomePage1 from "../pages/HomePage1/HomePage1"
 
 function Router() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route exact path={"/"}>
-                    <HomePage />
+                    <HomePage1 />
                 </Route>
+                
                
             </Switch>
         </BrowserRouter>

@@ -1,14 +1,12 @@
 import React from "react"
-import meliuz from "../assets/images/meliuz-logo.png"
 import {HeaderContainer, LogoMeliuz, Barra, FotoRegistro} from "./style"
 import { useHistory } from "react-router-dom";
-import {goToHomePage} from "../routes/Coordinator"
-import fotoRegistro from "../assets/images/logo-fr.png"
+import {goToHomePage} from "../../routes/Coordinator"
 
 
 
 
-const Header = () => {
+export default function Header () {
     const history = useHistory();
 
 
@@ -16,12 +14,9 @@ const Header = () => {
         <HeaderContainer>
           
             <a onClick={() =>  goToHomePage(history)}>
-                <LogoMeliuz src={meliuz}/> 
             </a>
             <Barra/>
-         < FotoRegistro src={fotoRegistro} />
         </HeaderContainer>
     )
 }
 
-export default Header;
