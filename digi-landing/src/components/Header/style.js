@@ -8,6 +8,11 @@ height: 60px;
 padding: 0 10px;
 background: #FC525F 0% 0% no-repeat padding-box;
 `
+export const ContentHeader = styled.div`
+display: flex;
+width: 30%;
+padding-left: 145px;
+`
 export const LogoMeliuz = styled.img`
 top: 13px;
 left: 801px;
@@ -35,4 +40,23 @@ height: 34px;
 margin-right: 200px;
 margin-right: 40px;
 
+`
+export const ButtonHeader = styled.button`
+position: absolute;
+margin-top: 120px;
+margin-left: 180px;
+background-color: #ffffff;
+width: 140px;
+height: 39px;
+border-radius: 24px;
+border: none;
+text-align: center;
+font: normal normal bold 15px/19px Montserrat;
+letter-spacing: 0px;
+color: #FC525F;
+text-transform: uppercase;
+opacity: 1;
+:hover {
+background-color: lightpink;
+}
 `
