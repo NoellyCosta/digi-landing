@@ -24,4 +24,15 @@ opacity: 1;
 :hover {
 background-color: lightpink;
 }
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+    margin-top: 110px;
+    width: 120px;
+    height: 33px;
+    text-align: center;
+font: normal normal bold 11px/14px Montserrat;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+opacity: 1;
+}
 `

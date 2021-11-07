@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import {goToHomePage, goToHomePage2} from "../../routes/Coordinator"
 import meliuzL1 from "../../images/tela1/meliuzL1.png"
 import fotoRTela1 from "../../images/tela1/fotoRTela1.png"
+import MediaQuery from "react-responsive"
 
 
 
@@ -21,8 +22,11 @@ const Header = () => {
             </a>
             <Barra/>
             <FotoRegistro src={fotoRTela1}/>
-            <ButtonHeader onClick={() => goToHomePage2(history)}>Ver Pagina2</ButtonHeader>
             </ContentHeader>
+            <ButtonHeader id="b-header"onClick={() => goToHomePage2(history)}>Ver Pagina2</ButtonHeader>
+            <MediaQuery query="(min-device-width: 320px) and (max-device-width: 420px)">
+                    <ButtonHeader />
+                </MediaQuery>
         </HeaderContainer>
     )
 }

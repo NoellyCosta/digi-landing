@@ -2,7 +2,11 @@ import styled from "styled-components"
 
 
 export const Slide = styled.div`
-width: 100;
+width: 100%;
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+display: flex;
+flex-wrap: wrap;
+}
 `
 export const Title = styled.div`
 height: 20px;
@@ -22,6 +26,9 @@ height: 198px;
 border-radius: 28px;
 background-color: #FFFFFF; 
 border-bottom: 16px;
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+   
+}
 `
 
 

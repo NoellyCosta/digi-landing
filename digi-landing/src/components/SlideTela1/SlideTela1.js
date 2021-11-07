@@ -23,7 +23,7 @@ const SlideTela1 = () => {
 
     return (
         <>
-            <Title>
+           <Title>
                 <h1 id="h1-slide" style={{ textAlign: "center" }}>Demais ofertas:</h1>
             </Title>
             <Slide>
@@ -209,7 +209,8 @@ const SlideTela1 = () => {
 
                 </Carousel>
             </Slide>
-        </>
+            </>
+        
 
     )
 }

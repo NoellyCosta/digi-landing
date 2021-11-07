@@ -13,4 +13,9 @@ top: 60px;
 left: 0px;
 width: 100%;
 height: 500px;
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+    height: 0px;
+    width: 0px;
+}
 `

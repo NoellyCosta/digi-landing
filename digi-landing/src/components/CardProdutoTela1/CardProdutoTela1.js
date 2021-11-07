@@ -3,6 +3,8 @@ import { ProductTwo, ProductOne, CardProduct, ImgArea, Offer, Title, TextInfo, P
 import t1FotoL from "../../images/tela1/t1FotoL.png"
 import t1Pack100 from "../../images/tela1/t1Pack100.png"
 import ButtonStyle from "../../components/Button/ButtonStyle"
+import MediaQuery from "react-responsive";
+import CardProductMobile from "../CardProductMobile/CardProductMobile"
 
 const CardProdutoTela1 = () => {
 
@@ -15,7 +17,7 @@ const CardProdutoTela1 = () => {
 
             <CardProduct>
 
-                <ProductOne>
+                <ProductOne id="hide-mobile">
                     <ImgArea>
                         <Offer>
                             <p><b>XX%</b><br />
@@ -25,7 +27,7 @@ const CardProdutoTela1 = () => {
 
                     </ImgArea>
                     <AreaInfo>
-                        <TextInfo>
+                        <TextInfo >
                             <h5>Fotolivro<b id="classic">Classic</b>
                                 <p id="A5">(A5 quadrado)</p></h5>
                         </TextInfo>
@@ -41,7 +43,7 @@ const CardProdutoTela1 = () => {
                     <ButtonStyle>Eu quero!</ButtonStyle>
                 </ProductOne>
 
-                <ProductTwo>
+                <ProductTwo id="hide-mobile">
                     <ImgArea>
                         <Offer>
                             <p><b>XX%</b><br />
@@ -64,9 +66,11 @@ const CardProdutoTela1 = () => {
                         </NewPrice>
                     </AreaInfo>
                     <ButtonStyle>Eu quero!</ButtonStyle>
-
+                   
                 </ProductTwo>
-
+                <MediaQuery query="(min-device-width: 320px) and (max-device-width: 420px)">
+                    <CardProductMobile />
+                </MediaQuery>
             </CardProduct>
         </div>
 
