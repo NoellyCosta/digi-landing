@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
 export const CardProduct = styled.div`
-align-content: center;
-margin-top: 60px;
-display: flex;
-flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-top: 20px;
 width: 100vw;
-height: 250px;
+height: 100vh;
 `
 
 export const Title = styled.div`
@@ -18,19 +17,22 @@ font: normal normal bold 24px/29px Montserrat;
 letter-spacing: 0px;
 color: #000000;
 opacity: 1;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 `
+
+
 export const ImgArea = styled.div`
+height: 200px;
+width: 150px;
 padding-left: 20px;
 img{
-   width: 225px;
-    height: 175px;
+   width: 290px;
+    height: 200px;
 }
 `
 export const Offer = styled.div`
 margin-top: 16px;
-display: flex;
 justify-content: space-between;
 background-color: #FD5766;
 width: 61px;
@@ -41,25 +43,27 @@ color: white;
 text-align: center;
 b{
 text-align: center;
-font: normal normal bold 22px/17px Montserrat;
+font: normal normal bold 21px/17px Montserrat;
 letter-spacing: 0px;
 color: #FFFFFF;
 text-transform: uppercase;
 }
 p{
-    padding-top: 2px;
+    padding-top: 4px;
 }
 `
 export const AreaInfo = styled.div`
-margin-left: 120px;
+margin-left: 122px;
 position: absolute;
 display: flex;
-
+width: 300px;
+height: 200px;
 `
 export const TextInfo = styled.div`
-padding-top: 2px;
+padding-top: 12px;
 padding-left: 26px;
-
+width: 100px;
+height: 70px;
 h5{
 width: 97px;
 height: 25px;
@@ -85,7 +89,6 @@ font: normal normal normal 14px/17px Montserrat;
 letter-spacing: 0px;
 color: #262626;
 margin-top: 1px;
-margin-left: 17px;
 }
 b{
     margin-left: 2px;
@@ -93,11 +96,11 @@ b{
 `
 
 export const Price = styled.div`
-padding-top: 62px;
+padding-top: 72px;
 letter-spacing: 2px;
 position: absolute;
 text-align: center;
-margin-left: 51px;
+margin-left: 50px;
 #de{
 text-align: center;
 font: normal normal normal 13px/16px Montserrat;
@@ -118,21 +121,20 @@ color: #262626;
 
 export const NewPrice = styled.div`
 display: flex;
-letter-spacing: 4px;
-padding-top: 76px;
+letter-spacing: 3px;
+padding-top: 86px;
 text-align: center;
-margin-left: 50px;
+margin-left: 45px;
 position: absolute;
 .por{
 text-align: center;
-font: normal normal normal 11px/18px Montserrat;
+font: normal normal normal 13px/23px Montserrat;
 letter-spacing: 0px;
 color: #262626;
-margin-right: 1px;
 }
 #new{
 text-align: center;
-font: normal normal bold 14px/18px Montserrat;
+font: normal normal bold 19px/23px Montserrat;
 letter-spacing: 0px;
 color: #262626;
 }
@@ -140,14 +142,22 @@ color: #262626;
     display: flex;
 }
 `
+
 export const ProductOne = styled.div`
 display: flex;
 box-shadow: 2px 2px 5px darkgray;
 text-align: center;
-width: 318px;
-height: 154px;
+width: 358px;
+height: 180px;
 border-radius: 28px;
 background-color: #e9ecef; 
+
+@media screen and (min-device-width: 320px){
+ 
+ margin-left: 10px;
+ width: 338px;
+height: 170px;
+}
 `
 
 
@@ -156,10 +166,18 @@ margin-top: 30px;
 display: flex;
 box-shadow: 2px 2px 5px darkgray;
 text-align: center;
-width: 318px;
-height: 150px;
+width: 308px;
+height: 180px;
 border-radius: 28px;
 background-color: #e9ecef;  
+
+@media screen and (min-device-width: 320px){
+ 
+    margin-left: 10px;
+    width: 338px;
+height: 170px;
+
+}
 
 `
 

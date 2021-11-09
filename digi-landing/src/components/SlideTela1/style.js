@@ -1,11 +1,18 @@
 import styled from "styled-components"
 
 
+export const Principal = styled.div`
+overflow-x: auto;
+width: 100vw;
+`
+
 export const Slide = styled.div`
-width: 100%;
+justify-content: center;
+align-content: center;
+margin-left: 3%;
+margin-right: 3%;
 @media screen and (min-device-width: 320px) and (max-device-width: 420px){
-display: flex;
-flex-wrap: wrap;
+   display: none
 }
 `
 export const Title = styled.div`
@@ -15,9 +22,13 @@ display: inline;
 #h1-slide{
    padding-top: 30px;
 }
+@media screen and (min-device-width: 320px) and (max-device-width: 420px){
+    display: none;
+}
 `
 export const Product = styled.div`
-margin-top: 30px;
+margin-left: 20px;
+margin-top: 10px;
 display: flex;
 box-shadow: 2px 2px 5px darkgray;
 text-align: center;
@@ -27,7 +38,7 @@ border-radius: 28px;
 background-color: #FFFFFF; 
 border-bottom: 16px;
 @media screen and (min-device-width: 320px) and (max-device-width: 420px){
-   
+
 }
 `
 

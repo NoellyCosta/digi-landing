@@ -1,5 +1,5 @@
 import React from "react"
-import { ProductTwo, ProductOne, CardProduct, ImgArea, Offer, Title, TextInfo, Price,NewPrice, AreaInfo } from "./style"
+import { ProductTwo, ProductOne, CardProduct, ImgArea, Offer, PrincipalCard, Title, TextInfo, Price,NewPrice, AreaInfo } from "./style"
 import t1FotoL from "../../images/tela1/t1FotoL.png"
 import t1Pack100 from "../../images/tela1/t1Pack100.png"
 import ButtonStyle from "../../components/Button/ButtonStyle"
@@ -9,7 +9,7 @@ import CardProductMobile from "../CardProductMobile/CardProductMobile"
 const CardProdutoTela1 = () => {
 
     return (
-        <div>
+        <PrincipalCard>
             <Title>
                 <h1>Ofertas em destaque:</h1>
             </Title>
@@ -68,11 +68,11 @@ const CardProdutoTela1 = () => {
                     <ButtonStyle>Eu quero!</ButtonStyle>
                    
                 </ProductTwo>
-                <MediaQuery query="(min-device-width: 320px) and (max-device-width: 420px)">
+                <MediaQuery query="(min-device-width: 320px) and (max-device-width: 670px)">
                     <CardProductMobile />
                 </MediaQuery>
             </CardProduct>
-        </div>
+        </PrincipalCard>
 
     )
 }

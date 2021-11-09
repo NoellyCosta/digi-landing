@@ -7,16 +7,21 @@ justify-content: center;
 height: 60px;
 padding: 0 10px;
 background: #FC525F 0% 0% no-repeat padding-box;
+
 `
 export const ContentHeader = styled.div`
-width: 100%;
+width: 100vw;
 display: flex;
-width: 30%;
+align-items: center;
+align-content: center ;
+justify-content: center;
 padding-left: 145px;
-@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
-    margin-left: 90px ;
+@media screen and (min-device-width: 320px) and (max-device-width: 936px) {
+    padding-left: 190px;
+
     display: flex;
     justify-content: center;
+    
 }
 `
 export const LogoMeliuz = styled.img`
@@ -25,7 +30,7 @@ left: 801px;
 width: 81px;
 height: 34px;
 margin-right: 10px;
-@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 936px) {
     width: 55px;
     height: 29px;
 }

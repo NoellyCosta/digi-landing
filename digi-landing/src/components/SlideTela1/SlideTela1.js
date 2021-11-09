@@ -1,6 +1,6 @@
 import React from "react"
 import Carousel from "react-elastic-carousel"
-import { Slide, Product, ImgArea, Offer, AreaInfo, TextInfo, Price, NewPrice, Title } from "./style"
+import { Slide, Principal, Product, ImgArea, Offer, AreaInfo, TextInfo, Price, NewPrice, Title } from "./style"
 import tela1Mais from "../../images/tela1/tela1Mais.png"
 import posterPremium1 from "../../images/tela1/posterPremium1.png"
 import card1 from "../../images/tela2/card1.png"
@@ -8,6 +8,7 @@ import calendar from "../../images/tela2/calendar.png"
 import t1FotoL from "../../images/tela1/t1FotoL.png"
 import t1Pack100 from "../../images/tela1/t1Pack100.png"
 import ButtonStyle from "../Button/ButtonStyle"
+
 
 const SlideTela1 = () => {
 
@@ -17,12 +18,10 @@ const SlideTela1 = () => {
         { width: 768, itemsToShow: 3 },
         { width: 1200, itemsToShow: 4 },
 
-
-
     ]
 
     return (
-        <>
+        <Principal>
            <Title>
                 <h1 id="h1-slide" style={{ textAlign: "center" }}>Demais ofertas:</h1>
             </Title>
@@ -75,6 +74,8 @@ const SlideTela1 = () => {
 
                             </NewPrice>
                         </AreaInfo>
+                        <ButtonStyle id="b-slide">Eu quero!</ButtonStyle>
+
                         
 
                     </Product>
@@ -208,8 +209,10 @@ const SlideTela1 = () => {
 
 
                 </Carousel>
+               
             </Slide>
-            </>
+            
+            </Principal>
         
 
     )
