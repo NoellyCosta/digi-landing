@@ -4,14 +4,14 @@ import Header from "../../components/Header/Header"
 import DemaisOfertasT1 from "../DemaisOfertasTela1/DemaisOfertasT1"
 import OfertasEmDestaque from "../OfertasEmDestaque/OfertasEmDestaque"
 import {ContainerHome} from "./style"
-
+import "./home.css"
 
 
 function HomePage1() {
 
 
     return (
-        <div>
+        <div className="centerHome">
             <ContainerHome>
             <Header />
            <Banner/>
